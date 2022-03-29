@@ -14,6 +14,7 @@ pipeline {
         stage("First step") {
             steps {
                 sh 'ssh -p 50923 root@95.169.182.43 \'hostname\''
+                sh 'ssh -p 50923 root@95.169.182.43 \'echo \"Hello World!\"'
             }
         }
         stage("Second step") {
